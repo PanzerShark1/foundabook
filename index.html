@@ -17,6 +17,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <title>Button Redirect</title>
         <title>Image with Vignette</title>
+        
         <style>
             .portfolio-item {
                 position: relative;
@@ -41,6 +42,8 @@
                 z-index: 1; /* A kép előtérben marad */
             }
         </style>
+        <form id="contactForm" action="send_email.php" method="POST">
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -53,11 +56,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#writers">Writers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Social Medias</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -71,41 +74,7 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#books">Jump to the books</a>
             </div>
         </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">You'll find all the books promoted on my Social Medias.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="books">
             <div class="container">
@@ -330,17 +299,57 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.png" alt="..." />
                             <h4>Xenon</h4>
-                            <p class="text-muted">"The Team"</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <p class="text-muted">"The Team"
+                            </p>
+                            <button class="btn btn-primary btn-xl text-uppercase" type="button" onclick="window.location.href='https://www.tiktok.com/@xenon0_0';">
+                                Personal TikTok
+                            </button>
+                            <p class="text-muted">
+                            </p>
+                            <button class="btn btn-primary btn-xl text-uppercase" type="button" onclick="window.location.href='https://www.instagram.com/xenon__0_0/';">
+                                Personal Instagram
+                            </button>
                         </div>
                     </div>
                 </div>
         <!--    <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
                 </div> -->
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Official Social Media Accounts</h2>
+                    <h3 class="section-subheading text-muted">These are my only official accounts. <br> Also you can report things on these accounts by writing a DM (Direct Message) to me.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Instagram</h4>
+                        <p class="text-muted">Searching for good and/or usefull books that can help you, or just improve your imagination.</p>
+                        <button class="btn btn-primary btn-xl text-uppercase" type="button" onclick="window.location.href='https://www.instagram.com/finding_books_foryou/';">
+                            View Instagram Account
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">TikTok</h4>
+                        <p class="text-muted">Exactly the same as the Instagram account just on another platform, to reach more people.</p>
+                        <button class="btn btn-primary btn-xl text-uppercase" type="button" onclick="window.location.href='https://www.tiktok.com/@finding_books_foryou?';">
+                            View TikTok Account
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Contact-->
@@ -350,60 +359,32 @@
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     <h3 class="section-subheading text-muted">If you have any problem.</h3>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm" action="send_email.php" method="POST">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *" required />
                             </div>
+                            <p></p>
                             <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required />
                             </div>
+                            <p></p>
                             <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="CURRENTLY NOT AVAILABLE, Please contact manually by sending message to: found.a.book0@gmail.com" required></textarea>
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
+                    <button class="btn btn-primary btn-xl text-uppercase" type="button" onclick="window.location.href='https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxjTTjjJmShPsTwPMqVTDrFtbFsxkNTgzVDBqJBzzjkZTBZvWSVtlZbBxVjzDhNBmzFRpr';">
+                        Temporary solution <br> Send G-Mail to this address
+                    </button>
                 </form>
             </div>
         </section>
